@@ -34,6 +34,7 @@
 <p>In this pattern, the class that represents the database table must not know the resources needed to carry out transactions with the database: inserting, updating and deleting information. These resources are in an ORM's own class, ensuring that the classes that represent the table have a single responsibility.</p>
 
 <p>In practice, for most ORMs on the market that implement the Data Mapper pattern, regardless of language, we will have code very similar to the one below:</p>
+  
 ```
 class PessoaController {
   static async pegarTodasAsPessoas(req, res){
